@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collectors</title>
+	<link rel="stylesheet" type="text/css" href="assets.css">
+
+<body>
+		<h1><span><strong>Crystal Collectors!</STRONG></STRONG><span></h1>
+            <p><h4>Your Goal</h4>
+                <hr>these crystals are equivalent to a different value each.</p>
+			<p> In this game you must determine their value.</p>
+			<p> To win you must add each mystery value to the random muber given to you in the beginning of the game.</p>
+			<p> Every new game will change the value of each crystal so playing the same pattern will not work!</p>
+		</div>
+
+        <div class = "container">
+			<div id="guessingNumber">
+				<h2>Number to Guess: <span class="value"></span></h2> 	
+			</div>
+
+			<div id="scoreboard">
+				<h3><span id="status"></span></h3>
+				<h3>Wins: <span id="win"></span></h3>
+				<h3>Losses: <span id="loss"></span> </h3>
+			</div>
+
+
+        <script type="text/javascript">
+        
+        
+            $(document).ready(function() {
+        
+        
+              var winCounter = 0;
+              var lossCounter = 0;
+              var totalScore = 0;
+        
+              $("#total").on("click", function() {
+                totalScore++;
+           
+              });
+              $("#win").on("click", function() {
+                winCounter++;
+        
+              });
+              $("#lose").on("click", function() {
+                lossCounter++;
+        
+              });
+            });
+        
+          </script>
+          <script src = "crystal.js"></script>
+</body>
+</html>
